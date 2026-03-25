@@ -12,7 +12,7 @@ import com.booking.booking.entity.TimeSlot;
 public interface TimeSlotRepository extends JpaRepository<TimeSlot, Long> {
     List<TimeSlot> findByServiceIdAndAvailableTrue(Long serviceId);
 
-    List<TimeSlot> findByServiceIdAndStartTimeGreaterThanAndEndTimeLessThenAndAvailableTrue(
+    List<TimeSlot> findByServiceIdAndStartTimeGreaterThanAndEndTimeLessThanAndAvailableTrue(
             Long serviceId,
             LocalDateTime startTime,
             LocalDateTime endTime

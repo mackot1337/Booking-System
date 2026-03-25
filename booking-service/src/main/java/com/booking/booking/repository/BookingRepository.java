@@ -10,7 +10,7 @@ import com.booking.booking.entity.Booking;
 
 @Repository
 public interface BookingRepository extends JpaRepository<Booking, Long> {
-    List<Booking> findByUserEmail(String email);   
+    List<Booking> findByClientEmail(String email);   
 
     List<Booking> findByServiceId(Long serviceId);
 

@@ -9,5 +9,5 @@ import com.booking.booking.entity.BusinessProfile;
 
 @Repository
 public interface BusinessProfileRepository extends JpaRepository<BusinessProfile, Long> {
-    Optional<BusinessProfile> findOwnerByEmail(String email);
+    Optional<BusinessProfile> findOwnerByOwnerEmail(String email);
 }
