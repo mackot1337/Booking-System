@@ -5,7 +5,7 @@ import lombok.RequiredArgsConstructor;
 
 @Data
 @RequiredArgsConstructor
-public class BookingDto {
+public class BookingRequest {
     private Long TimeSlotId;
     private String clientEmail;
     private String clientName;
